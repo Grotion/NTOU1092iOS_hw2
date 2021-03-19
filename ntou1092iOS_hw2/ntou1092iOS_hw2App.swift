@@ -11,7 +11,7 @@ import SwiftUI
 struct ntou1092iOS_hw2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomePage()
         }
     }
 }

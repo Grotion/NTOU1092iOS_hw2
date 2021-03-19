@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A17546A2600547300F04E5D /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1754692600547300F04E5D /* HomePage.swift */; };
+		4A17547326005E4300F04E5D /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17547226005E4300F04E5D /* GamePage.swift */; };
 		4A3AEDA525FFCA4D0000D71A /* ntou1092iOS_hw2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AEDA425FFCA4D0000D71A /* ntou1092iOS_hw2App.swift */; };
-		4A3AEDA725FFCA4D0000D71A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AEDA625FFCA4D0000D71A /* ContentView.swift */; };
 		4A3AEDA925FFCA4E0000D71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3AEDA825FFCA4E0000D71A /* Assets.xcassets */; };
 		4A3AEDAC25FFCA4F0000D71A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3AEDAB25FFCA4F0000D71A /* Preview Assets.xcassets */; };
+		4A701303260336FF00571811 /* GameOverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A701302260336FF00571811 /* GameOverPage.swift */; };
+		4AF475C82600635C00E18EA8 /* ResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF475C72600635C00E18EA8 /* ResultPage.swift */; };
+		4AF475CE26006D5200E18EA8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF475CD26006D5200E18EA8 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A1754692600547300F04E5D /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		4A17547226005E4300F04E5D /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
 		4A3AEDA125FFCA4D0000D71A /* ntou1092iOS_hw2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ntou1092iOS_hw2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3AEDA425FFCA4D0000D71A /* ntou1092iOS_hw2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ntou1092iOS_hw2App.swift; sourceTree = "<group>"; };
-		4A3AEDA625FFCA4D0000D71A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A3AEDA825FFCA4E0000D71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A3AEDAB25FFCA4F0000D71A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A3AEDAD25FFCA4F0000D71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A701302260336FF00571811 /* GameOverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverPage.swift; sourceTree = "<group>"; };
+		4AF475C72600635C00E18EA8 /* ResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPage.swift; sourceTree = "<group>"; };
+		4AF475CD26006D5200E18EA8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				4A3AEDA425FFCA4D0000D71A /* ntou1092iOS_hw2App.swift */,
-				4A3AEDA625FFCA4D0000D71A /* ContentView.swift */,
+				4A1754692600547300F04E5D /* HomePage.swift */,
+				4A17547226005E4300F04E5D /* GamePage.swift */,
+				4AF475C72600635C00E18EA8 /* ResultPage.swift */,
+				4A701302260336FF00571811 /* GameOverPage.swift */,
+				4AF475CD26006D5200E18EA8 /* Card.swift */,
 				4A3AEDA825FFCA4E0000D71A /* Assets.xcassets */,
 				4A3AEDAD25FFCA4F0000D71A /* Info.plist */,
 				4A3AEDAA25FFCA4F0000D71A /* Preview Content */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A3AEDA725FFCA4D0000D71A /* ContentView.swift in Sources */,
+				4A17546A2600547300F04E5D /* HomePage.swift in Sources */,
 				4A3AEDA525FFCA4D0000D71A /* ntou1092iOS_hw2App.swift in Sources */,
+				4AF475CE26006D5200E18EA8 /* Card.swift in Sources */,
+				4A17547326005E4300F04E5D /* GamePage.swift in Sources */,
+				4A701303260336FF00571811 /* GameOverPage.swift in Sources */,
+				4AF475C82600635C00E18EA8 /* ResultPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
