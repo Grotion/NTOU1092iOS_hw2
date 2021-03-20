@@ -581,71 +581,9 @@ struct GamePage: View
                 .scaledToFit()
                 .edgesIgnoringSafeArea(.all)
                 InfoView(isShow: $infoAppear, trumpSuit: $trumpSuit, tricks2win: $tricks2win, myTricks: $myTricks, oppTricks: $oppTricks, tableSuit: $tableSuit, playerTurn: $playerTurn)
-                HStack
-                {
-                    Spacer()
-                    Text("\(playerCalls[1])")
-                    VStack(alignment: .center, spacing: -35, content:
-                    {
-                        Group
-                        {
-                            ForEach(player1Cards.indices, id: \.self)
-                            {
-                                (index) in
-                                Image("back")
-                                .resizable()
-                                .frame(width: 80, height:60)
-                                .scaledToFit()
-                                .border(Color.black, width: 1)
-                            }
-                        }
-                        
-                    })
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
-                }
-                VStack
-                {
-                    HStack(alignment: .center, spacing: -35, content:
-                    {
-                        Group
-                        {
-                            ForEach(player2Cards.indices, id: \.self)
-                            {
-                                (index) in
-                                Image("back")
-                                .resizable()
-                                .frame(width: 60, height:80)
-                                .scaledToFit()
-                                .border(Color.black, width: 1)
-                            }
-                        }
-                        
-                    })
-                    .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
-                    Text("\(playerCalls[2])")
-                    Spacer()
-                }
-                HStack
-                {
-                    VStack(alignment: .center, spacing: -35, content:
-                    {
-                        Group
-                        {
-                            ForEach(player3Cards.indices, id: \.self)
-                            {
-                                (index) in
-                                Image("back")
-                                .resizable()
-                                .frame(width: 80, height:60)
-                                .scaledToFit()
-                                .border(Color.black, width: 1)
-                            }
-                        }
-                    })
-                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
-                    Text("\(playerCalls[3])")
-                    Spacer()
-                }
+                player1CardView(player1Cards: $player1Cards, playerCalls: $playerCalls)
+                player2CardView(player2Cards: $player2Cards, playerCalls: $playerCalls)
+                player3CardView(player3Cards: $player3Cards, playerCalls: $playerCalls)
                 VStack
                 {
                     Spacer()
@@ -946,6 +884,98 @@ struct InfoView: View
                 //.frame(height:100)
                 Spacer()
             }
+        }
+    }
+}
+
+struct player1CardView: View
+{
+    @Binding var player1Cards:[Card]
+    @Binding var playerCalls:[String]
+    var body: some View
+    {
+        HStack
+        {
+            Spacer()
+            Text("\(playerCalls[1])")
+            VStack(alignment: .center, spacing: -35, content:
+            {
+                Group
+                {
+                    ForEach(player1Cards.indices, id: \.self)
+                    {
+                        (index) in
+                        Image("back")
+                            .resizable()
+                            .frame(width: 80, height:60)
+                            .scaledToFit()
+                            .border(Color.black, width: 1)
+                    }
+                }
+                
+            })
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
+        }
+    }
+}
+
+struct player2CardView: View
+{
+    @Binding var player2Cards:[Card]
+    @Binding var playerCalls:[String]
+    var body: some View
+    {
+        VStack
+        {
+            HStack(alignment: .center, spacing: -35, content:
+            {
+                Group
+                {
+                    ForEach(player2Cards.indices, id: \.self)
+                    {
+                        (index) in
+                        Image("back")
+                            .resizable()
+                            .frame(width: 60, height:80)
+                            .scaledToFit()
+                            .border(Color.black, width: 1)
+                    }
+                }
+                
+            })
+                .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
+            Text("\(playerCalls[2])")
+            Spacer()
+        }
+    }
+}
+
+struct player3CardView: View
+{
+    @Binding var player3Cards:[Card]
+    @Binding var playerCalls:[String]
+    var body: some View
+    {
+        HStack
+        {
+            VStack(alignment: .center, spacing: -35, content:
+            {
+                Group
+                {
+                    ForEach(player3Cards.indices, id: \.self)
+                    {
+                        (index) in
+                        Image("back")
+                            .resizable()
+                            .frame(width: 80, height:60)
+                            .scaledToFit()
+                            .border(Color.black, width: 1)
+                    }
+                }
+            })
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+            Text("\(playerCalls[3])")
+            Spacer()
         }
     }
 }
