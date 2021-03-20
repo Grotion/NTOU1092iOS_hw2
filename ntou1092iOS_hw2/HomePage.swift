@@ -9,11 +9,11 @@ import SwiftUI
 
 struct HomePage: View
 {
-    @State private var coin:Int = 100
+    @State private var coin:Int = 800
     init()
     {
-        coin = 100
-        //coin = 800
+        //coin = 100
+        coin = 800
     }
     var body: some View
     {
