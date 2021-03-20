@@ -846,7 +846,7 @@ struct InfoView: View
                         .font(Font.custom("PingFangSC-Regular", size: 20))
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 102/255, green: 0/255, blue: 204/255))
-                        Text(tableSuit=="" ? "" : "Current suit: \(suitEmojis[suits.firstIndex(of: tableSuit) ?? 0])")
+                        Text(tableSuit=="" ? "" : "Current Suit: \(suitEmojis[suits.firstIndex(of: tableSuit) ?? 0])")
                         .font(Font.custom("PingFangSC-Regular", size: 20))
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 204/255, green: 0/255, blue: 102/255))
